@@ -7,4 +7,8 @@ describe('flipArgs', () => {
     expect(flipArgs()).toBe('true String');
     expect(count).toBe(1);
   });
+  it('should flip the given inputs', () => {
+    expect(flipArgs(1, 2, 3)).toBe(3, 2, 1);
+    expect(flipArgs('a', 'b', 'c')).toBe('c', 'b', 'a');
+  });
 });
