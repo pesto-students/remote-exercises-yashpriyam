@@ -1,4 +1,3 @@
-
 function duplicateLetters(...args) {
   const argsArray = Array.from(...args);
   const letterCountArray = [];
