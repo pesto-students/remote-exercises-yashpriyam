@@ -41,13 +41,6 @@ const all = inputArray => inputArray.every(el => el <= 1000);
 
 const some = inputArray => inputArray.some(el => el <= 500);
 
-// console.log(map({'YAsh': 2, 'priyam': 5}));
-// console.log(filter({'YAsh': 2, 'names': 5}, filterCallBack));
-// console.log(invert({'YAsh': 2, 'names': 5}));
-// console.log(merge([{'YAsh': 2}, {'names': 5},{'a': 2},{'we': 23}]));
-// console.log(all([34,98,76,24,29,0,899,456,898,999,1000]));
-// console.log(some([67,900,89,879,876,656,545,90]));
-
 export {
   map,
   filter,
