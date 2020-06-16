@@ -1,0 +1,52 @@
+
+.App-header {
+  background-color: lightpink;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 5px 10px 10px 100px;
+}
+
+
+.blacktext {
+  color: black;
+  padding: 10px 10px 10px 0px;
+  margin: 10px 0px 10px -20px;
+}
+
+.whitetext {
+  color: red;
+  padding: 10px 10px 10px 0px;
+  margin: 10px 0px 10px -20px;
+}
+
+.count {
+  border-radius: 5vw;
+  border-style: none;
+  background-color: antiquewhite;
+  color: black;
+  padding: 1px 10px;
+  margin: 10px;
+  word-spacing: 10px;
+}
+
+
+.input {
+  padding: 10px;
+  border-style: groove;
+  border-width: 5px;
+  border-color: orange;
+}
+.input:hover {
+  background-color: lightgray;
+}
+.btn {
+  padding: 10px;
+  margin: 5px;
+  border-width: 5px;
+  border-color: orange;
+}
+.btn:hover{
+  transform: scaleY(1.1) scaleX(1.1);
+  background-color: lightgray;
+}
+
