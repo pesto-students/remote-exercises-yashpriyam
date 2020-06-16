@@ -7,6 +7,7 @@ class App extends React.Component {
     this.state = {
       groceryList: {},
       itemName: '',
+      black: true,
     }
   }
 
@@ -25,23 +26,50 @@ class App extends React.Component {
     this.setState({ itemName: e.target.value });
   }
 
+  handleClick = () => {
+    this.setState({ black: !this.state.black })
+  }
+
   render() {
     const { groceryList } = this.state;
     const groceryMap = Object.entries(groceryList);
+    
+    
     return (
       <div className='App-header'>
         <h1>Grocery List</h1>
         <div className='functions'>
-          <input className='input' type='text' placeholder='Write item name here' onChange={ this.handleChange } value={this.state.itemName}></input>
+          <input className='input' type='text' placeholder='Write item name here'
+          onChange={ this.handleChange } value={this.state.itemName}></input>
           <button className='btn' onClick={ this.handleSubmit }>Add Item</button>
           <button className='btn' onClick={ this.handleClear }>Clear All Items</button>
         </div>
         <div className='list-items'>
           <h3>Items &nbsp; - &nbsp;<span>Count</span></h3>
           <ul>
-          { groceryMap.map(item => <li>{`${item[0]}`} &nbsp; <span className='count'>{`${item[1]}`}</span></li>) }
+          { groceryMap.map(item => <ListItem item={item} />) }
           </ul>
         </div>
+      </div>
+    )
+  }
+}
+
+class ListItem extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      black: true,
+    }
+  }
+  handleClick = () => {
+    this.setState({ black: !this.state.black })
+  }
+  render() {
+    const inputClassName = this.state.black ? 'blacktext' : 'whitetext';
+    return(
+      <div className={inputClassName} onClick={this.handleClick}>
+        <li>{`${this.props.item[0]}`} &nbsp; <span className='count'>{`${this.props.item[1]}`}</span></li>
       </div>
     )
   }

@@ -1,19 +1,22 @@
 
 .App-header {
-  background-color: #282c34;
+  background-color: lightpink;
   font-size: calc(10px + 2vmin);
   color: white;
   padding: 5px 10px 10px 100px;
 }
 
-li:nth-child(even) {
+
+.blacktext {
+  color: black;
   padding: 10px 10px 10px 0px;
   margin: 10px 0px 10px -20px;
-  color: aquamarine;
 }
 
-li {
-  margin-left: -20px;
+.whitetext {
+  color: red;
+  padding: 10px 10px 10px 0px;
+  margin: 10px 0px 10px -20px;
 }
 
 .count {
@@ -31,6 +34,7 @@ li {
   padding: 10px;
   border-style: groove;
   border-width: 5px;
+  border-color: orange;
 }
 .input:hover {
   background-color: lightgray;
@@ -39,6 +43,7 @@ li {
   padding: 10px;
   margin: 5px;
   border-width: 5px;
+  border-color: orange;
 }
 .btn:hover{
   transform: scaleY(1.1) scaleX(1.1);
