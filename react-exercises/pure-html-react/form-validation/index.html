@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+  Quantity (between 1 and 5):
+  <input id="quantity" name="quantity" type="number" oninput="validator()">
+  <input type="submit" onclick="validator()">
+</form>
+<script>
+function validator() {
+  const num = document.getElementById("quantity").value;
+  if (num < 1 || num > 5) {
+    alert("Only value between 1 to 5 is allowed");
+    return;
+  }
+}
+</script>
+</body>
+</html>
