@@ -2,7 +2,7 @@
 
 # Submission
 
-Game URL: _____
+Game URL: https://yashpriyam.github.io/react-snake-game/
 
 Mockup URL: https://balsamiq.cloud/s2qzdre/p51iths
 
