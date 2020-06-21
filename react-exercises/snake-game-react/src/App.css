@@ -1,0 +1,60 @@
+.main {
+  background: linear-gradient(rgb(156, 231, 225), rgba(231, 231, 131, 0.836));
+  /* repeating-radial-gradient(black,black 10%, white 15%); */
+  height: 40vw;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 5vw;
+  margin-left: 32vw;
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: -10px;
+}
+
+.canvas {
+  border: 1px solid gray;
+  background: linear-gradient(rgb(156, 231, 225), rgba(231, 231, 131, 0.836));
+  border-width: 5px;
+  margin: 20px  490px 0px 400px;
+}
+
+.score-div {
+  background-color: lightgray;
+  width: 15vw;
+  margin-left: 6vw;
+  margin-top: -41vw;
+  text-align: center;
+  padding: 10px;
+  border-style: solid;
+}
+
+.start-button {
+  position: relative;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 2vw;
+  background-color: lightgray;
+  float: right;
+  margin-top: -75px;
+  margin-right: 16vw;
+
+}
+
+.start-button:hover {
+  background: orangered;
+  transform: scale(1.2);
+  transition: 200ms ease-in-out;
+}
+
+.end-game {
+  color: red;
+  font-size: 5vw;
+  text-align: center;
+  margin-left: -7vw;
+  margin-top: 5vw;
+}
+

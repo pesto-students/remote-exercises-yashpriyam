@@ -15,6 +15,6 @@
   "license": "ISC",
   "dependencies": {
     "npx": "^10.2.2",
-    "pesto-exercise-starter": "*"
+    "pesto-exercise-starter": "^1.0.2"
   }
 }
