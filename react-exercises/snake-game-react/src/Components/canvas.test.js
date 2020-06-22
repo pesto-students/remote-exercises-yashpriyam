@@ -4,3 +4,4 @@ import Adapter from 'enzyme-adapter-react-16';
 import Canvas from './canvas';
 
 Enzyme.configure({ adapter: new Adapter() });
+
