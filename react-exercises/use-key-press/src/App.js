@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import useKeyPress from './useKeyPress';
 import './App.css';
 
@@ -6,14 +6,10 @@ function App() {
   const [key, setKey] = useState(null);
 
   function handlekeydown(e) {
-    console.log(e.key);
     setKey(e.key);
   }
 
-  useEffect(() => {}, [])
   const keyPressed = useKeyPress(key);
-  console.log(keyPressed);
-  
 
   return (
     <>
@@ -22,9 +18,9 @@ function App() {
     <div>
         {
           keyPressed ? (
-          <h2>{key} key pressed</h2>
+          <h1>Pressed</h1>
           ) : (
-          <h2>{key} key not pressed</h2>
+          <h2>Not Pressed</h2>
           )
         }
     </div>
