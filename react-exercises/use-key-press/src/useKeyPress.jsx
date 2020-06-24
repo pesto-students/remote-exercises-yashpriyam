@@ -10,10 +10,9 @@ function useKeyPress(subscribedKey) {
                     setSubscribedKeyPressed(true);
                     break;
                 default:
-                    return false
+                    return false;
             }  
         })
-
         return document.removeEventListener("keydown", () => {})
     }, [subscribedKey])
     return subscribedKeyPressed;
