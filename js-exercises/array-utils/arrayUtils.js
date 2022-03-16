@@ -21,7 +21,7 @@ const myForEach = (inputArray, callBackFunction, thisArg) => {
     throw new Error('Non-iterable value passed, expected iterable');
   }
   let count = 0;
-  const inputArrayCopy = Array.isArray(inputArray) ? inputArray : Array.from(inputArray);
+  const inputArrayCopy = Array.isArray(inputArray) ? [...inputArray] : Array.from(inputArray);
   for (const elem of inputArrayCopy) {
     callBackFunction(elem, count += 1, inputArrayCopy);
   }
@@ -33,7 +33,7 @@ const myMap = (inputArray, callBackFunction, thisArg) => {
   if (thisArg) {
     callBackFunction.bind(thisArg);
   }
-  const inputArrayCopy = Array.isArray(inputArray) ? inputArray : Array.from(inputArray);
+  const inputArrayCopy = Array.isArray(inputArray) ? [...inputArray] : Array.from(inputArray);
   for (const elem of inputArrayCopy) {
     mappingResult.push(callBackFunction(elem, count += 1, inputArrayCopy));
   }
@@ -46,7 +46,7 @@ const myFilter = (inputArray, callBackFunction, thisArg) => {
   if (thisArg) {
     callBackFunction.bind(thisArg);
   }
-  const inputArrayCopy = Array.isArray(inputArray) ? inputArray : Array.from(inputArray);
+  const inputArrayCopy = Array.isArray(inputArray) ? [...inputArray] : Array.from(inputArray);
   for (const elem of inputArrayCopy) {
     count += 1;
     if (callBackFunction(elem, count, inputArrayCopy)) {
@@ -60,7 +60,7 @@ const myReduce = (inputArray, callBackFunction, initialValue, thisArg) => {
   if (thisArg) {
     callBackFunction.bind(thisArg);
   }
-  const inputArrayCopy = Array.isArray(inputArray) ? inputArray : Array.from(inputArray);
+  const inputArrayCopy = Array.isArray(inputArray) ? [...inputArray] : Array.from(inputArray);
   let init;
   if (initialValue) {
     init = initialValue;
